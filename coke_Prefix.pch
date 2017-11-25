@@ -1,0 +1,23 @@
+//
+// Prefix header for all source files of the 'coke' target in the 'coke' project
+//
+
+#ifdef __OBJC__
+//#import <opencv2/core/core.hpp>
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "ZSExtension.h"
+#import "ZSLocationManager.h"
+#import "CoreDataManager.h"
+#import "CCDiscountManager.h"
+#import "FaceBookManager.h"
+#import "ZSAlertView.h"
+#import "UINavigationBar+Background.h"
+#endif
+
+#define CCCokeBankShouldGoBottleNotification @"CCCokeBankShouldGoBottleNotification"
+#define CCCokeBankShouldGoBarCodeNotification @"CCCokeBankShouldGoBarCodeNotification"
+#define CCCokeBankShouldGoIntroNotification @"CCCokeBankShouldGoIntroNotification"
+
+#import "CCHelpViewController.h"
+#define showSimpleAlert(msg) { ZSAlertView *av = [[ZSAlertView alloc] initWithTitle:nil message:msg delegate:nil cancelButtonTitle:@"確定" otherButtonTitles:nil];[av show]; [av release];}
